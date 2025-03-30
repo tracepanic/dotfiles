@@ -1,0 +1,56 @@
+# Set mod key to Alt
+set $mod Mod1
+
+# Set Ghostty as terminal
+set $term ghostty
+
+# Set background
+exec swaybg -o eDP-1 -i ~/images/arch_linux.jpg -m fill
+
+
+##### Keybindings
+
+# Open terminal
+bindsym $mod+Return exec $term
+
+# Reload sway config
+bindsym $mod+Shift+r reload
+
+# Close a window
+bindsym $mod+q kill
+
+# Exit sway
+bindsym $mod+Shift+e exec swaymsg exit
+
+# Open fuzzed
+bindsym $mod+space exec fuzzel
+
+# Take screenshot with grim
+bindsym Print exec mkdir -p ~/images/screenshots && grim ~/images/screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png
+bindsym Shift+Print exec mkdir -p ~/images/screenshots && grim -g "$(slurp)" ~/images/screenshots/$(date +'%Y-%m-%d_%H-%M-%S').png
+
+
+##### Workspaces
+
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+
+
+##### Touchpad
+
+input type:touchpad {
+  tap enabled
+  tap_button_map lrm
+  dwt enabled
+  natural_scroll enabled
+}
+
+
+##### Bar
+
+bar {
+  position bottom
+  status_command while date +'%H:%M:%S'; do sleep 1; done
+}
