@@ -6,7 +6,7 @@
 
   "modules-left": ["sway/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["cpu", "memory", "network", "pulseaudio", "battery"],
+  "modules-right": ["cpu", "memory", "backlight", "network", "pulseaudio", "battery"],
 
   "sway/workspaces": {
     "disable-scroll": true,
@@ -31,9 +31,15 @@
     "tooltip": false
   },
 
+   "backlight": {
+    "device": "intel_backlight",
+    "format": "BRI {percent}%",
+    "tooltip": false
+  },
+
   "network": {
     "format-wifi": "WIFI({essid})",
-    "format-ethernet": "ETH {ipaddr}",
+    "format-ethernet": "ETH({ipaddr})",
     "format-disconnected": "OFF",
     "tooltip": false
   },
