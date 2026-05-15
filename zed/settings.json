@@ -1,0 +1,62 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "outline_panel": {
+    "dock": "left"
+  },
+  "cli_default_open_behavior": "new_window",
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "git_panel": {
+    "tree_view": true,
+    "dock": "left",
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "show_edit_predictions": false,
+  "edit_predictions": {
+    "mode": "subtle",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "agent_ui_font_size": 15,
+  "agent_buffer_font_size": 13,
+  "tab_size": 2,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Frappé",
+    "dark": "Catppuccin Mocha",
+  },
+  "languages": {
+    "HTML": {
+      "formatter": "none",
+    },
+    "Markdown": {
+      "soft_wrap": "bounded",
+      "preferred_line_length": 80,
+    },
+  },
+}
