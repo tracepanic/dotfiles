@@ -7,11 +7,22 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "text_rendering_mode": "platform_default",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "cli_default_open_behavior": "new_window",
   "agent": {
+    "default_model": {
+      "provider": "openai-subscribed",
+      "model": "gpt-5.5",
+      "enable_thinking": true,
+    },
     "sidebar_side": "right",
     "dock": "right",
     "favorite_models": [],
@@ -40,10 +51,7 @@
     "diagnostics": false,
     "metrics": false,
   },
-  "ui_font_size": 15,
-  "buffer_font_size": 15,
-  "agent_ui_font_size": 15,
-  "agent_buffer_font_size": 13,
+  "buffer_font_size": 14,
   "tab_size": 2,
   "theme": {
     "mode": "system",
@@ -57,6 +65,8 @@
     "Markdown": {
       "soft_wrap": "bounded",
       "preferred_line_length": 80,
+      "format_on_save": "on",
+      "formatter": "prettier",
     },
   },
 }
