@@ -58,13 +58,13 @@
     "light": "Catppuccin Frappé",
     "dark": "Catppuccin Mocha",
   },
+  "preferred_line_length": 80,
+  "soft_wrap": "bounded",
   "languages": {
     "HTML": {
       "formatter": "none",
     },
     "Markdown": {
-      "soft_wrap": "bounded",
-      "preferred_line_length": 80,
       "format_on_save": "on",
       "formatter": "prettier",
     },
